@@ -60,9 +60,10 @@ function NoteCard({
           onClick={() => onDelete(note.id)}
           className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm font-medium text-rose-700 transition hover:border-rose-300 hover:bg-rose-100"
         >
-          Delete a note
+          Delete your note
         </button>
       </div>
+
       {isOpen && (
         <div className="border-t border-indigo-100 bg-indigo-50/30 px-5 py-4">
           <div className="rounded-xl border border-indigo-100 bg-white p-4">
