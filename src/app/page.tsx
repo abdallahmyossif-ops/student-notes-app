@@ -26,9 +26,8 @@ function NoteCard({
           className="flex flex-1 items-center gap-3 text-left"
         >
           <svg
-            className={`mt-0.5 h-5 w-5 shrink-0 text-indigo-500 transition-transform ${
-              isOpen ? "rotate-90" : ""
-            }`}
+            className={`mt-0.5 h-5 w-5 shrink-0 text-indigo-500 transition-transform ${isOpen ? "rotate-90" : ""
+              }`}
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -61,10 +60,9 @@ function NoteCard({
           onClick={() => onDelete(note.id)}
           className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm font-medium text-rose-700 transition hover:border-rose-300 hover:bg-rose-100"
         >
-          Delete
+          Delete a note
         </button>
       </div>
-
       {isOpen && (
         <div className="border-t border-indigo-100 bg-indigo-50/30 px-5 py-4">
           <div className="rounded-xl border border-indigo-100 bg-white p-4">
