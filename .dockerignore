@@ -1,0 +1,7 @@
+# Don't copy these folders into the Docker image — they are too large
+# or they will be regenerated inside the container anyway
+node_modules
+.next
+.git
+.env
+*.zip

@@ -1,0 +1,23 @@
+# 1. Use the official lightweight Node.js image as the base
+FROM node:18-alpine
+
+# 2. Set the working folder inside the container
+WORKDIR /app
+
+# 3. Copy package files first (this helps Docker cache the install step)
+COPY package*.json ./
+
+# 4. Install all node packages
+RUN npm install
+
+# 5. Copy the rest of the project files into the container
+COPY . .
+
+# 6. Build the Next.js application for production
+RUN npm run build
+
+# 7. Tell Docker this container will listen on port 3000
+EXPOSE 3000
+
+# 8. Start the Next.js production server
+CMD ["npm", "run", "start"]
