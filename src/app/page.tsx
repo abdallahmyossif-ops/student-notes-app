@@ -156,7 +156,7 @@ export default function HomePage() {
               <polyline points="10 9 9 9 8 9" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900">Student Study Notes</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-slate-900">Student Notes</h1>
           <p className="text-sm text-slate-600">Quick notes, simple and focused</p>
         </header>
 
