@@ -1,5 +1,1 @@
-# Use the official PostgreSQL 15 image (alpine = lightweight version)
 FROM postgres:15-alpine
-
-# The database username, password, and name are configured
-# via environment variables in docker-compose.yml
